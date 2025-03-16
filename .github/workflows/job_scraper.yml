@@ -5,16 +5,20 @@ on:
     - cron: '0 2 * * *'  # Run daily at 2 AM UTC
   workflow_dispatch:      # Allow manual trigger
 
+# 添加权限设置
+permissions:
+  contents: write
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
     
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
         python-version: '3.9'
         
@@ -30,6 +34,6 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add data/ README.md
+        git add data/ README.md || true
         git commit -m "Update job listings: $(date +'%Y-%m-%d')" || echo "No changes to commit"
         git push
