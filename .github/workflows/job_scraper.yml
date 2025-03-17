@@ -64,12 +64,11 @@ jobs:
           echo "No changes to commit"
         fi
       
-    # 上传日志文件以便调试
-    - name: Upload logs
-      uses: actions/upload-artifact@v3
-      if: always()  # 确保无论成功失败都上传日志
-      with:
-        name: scraper-logs
-        path: |
-          scraper_log.txt
-          data/
+    # 移除有问题的日志上传步骤，使用更简单的方法来处理输出
+    - name: Check for generated files
+      run: |
+        echo "====== Job Scraper Results ======"
+        echo "Scraper log:"
+        cat scraper_log.txt || echo "No log file found"
+        echo "Generated files:"
+        ls -la data/ || echo "No data files found"
