@@ -4,8 +4,8 @@ An automated tracker for Chinese teacher job postings from major job sites.
 
 ## Latest Update
 
-- Date: 2025-06-03
-- Jobs found: 2
+- Date: 2025-06-04
+- Jobs found: 1
 
 ## About This Repository
 
