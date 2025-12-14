@@ -1,0 +1,29 @@
+[
+    {
+        "title": "Mandarin Chinese Teacher",
+        "company": "International School District",
+        "location": "Remote/Online",
+        "salary": "$3500-$4500 per month",
+        "date_posted": "Within last 7 days",
+        "job_link": "https://example.com/job1",
+        "source": "Example Data"
+    },
+    {
+        "title": "Chinese Language Instructor",
+        "company": "Global Education Center",
+        "location": "New York, NY",
+        "salary": "$45000-$55000 per year",
+        "date_posted": "Within last 7 days",
+        "job_link": "https://example.com/job2",
+        "source": "Example Data"
+    },
+    {
+        "title": "Mandarin Tutor and Curriculum Developer",
+        "company": "Online Learning Platform",
+        "location": "San Francisco, CA (Remote)",
+        "salary": "$4000 per month",
+        "date_posted": "Within last 7 days",
+        "job_link": "https://example.com/job3",
+        "source": "Example Data"
+    }
+]
